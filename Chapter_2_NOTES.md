@@ -60,7 +60,8 @@ then it is also true for k+1, then the statement is true for all natural numbers
 
 The process of mathematical induction involves two steps:
 Base case: Prove that the statement is true for some specific natural number, usually 0 or 1.
-Inductive step: Assume that the statement is true for some arbitrary natural number k, and then prove that the statement is also true for k+1.
+Inductive step: Assume that the statement is true for some arbitrary natural number k,
+and then prove that the statement is also true for k+1.
 
 By doing so, we establish that the statement is true for all natural numbers greater than or equal to the base case.
 For example, let's prove by mathematical induction that the sum of the first n natural numbers is n(n+1)/2:
