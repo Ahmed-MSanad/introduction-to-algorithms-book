@@ -64,11 +64,14 @@ Inductive step: Assume that the statement is true for some arbitrary natural num
 
 By doing so, we establish that the statement is true for all natural numbers greater than or equal to the base case.
 For example, let's prove by mathematical induction that the sum of the first n natural numbers is n(n+1)/2:
-
 Base case: For n=1, the sum of the first natural number is 1, and n(n+1)/2 = 1(1+1)/2 = 1, so the statement is true for n=1.
-Inductive step: Assume that the statement is true for some arbitrary natural number k, i.e., the sum of the first k natural numbers is k(k+1)/2. We want to prove that the statement is also true for k+1.
-The sum of the first k+1 natural numbers is (k+1) + the sum of the first k natural numbers, which is (k+1) + k(k+1)/2 = (k+1)(k+2)/2 = (k+1)((k+1)+1)/2. Therefore, the statement is true for k+1.
+Inductive step: Assume that the statement is true for some arbitrary natural number k,
+the sum of the first k natural numbers is k(k+1)/2. We want to prove that the statement is also true for k+1.
+The sum of the first k+1 natural numbers is (k+1) + the sum of the first k natural numbers,
+which is (k+1) + k(k+1)/2 = (k+1)(k+2)/2 = (k+1)((k+1)+1)/2. Therefore, the statement is true for k+1.
 By the principle of mathematical induction, we can conclude that the statement is true for all natural numbers.
+
+
 
 
 ```
