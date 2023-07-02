@@ -43,10 +43,15 @@ Loop from j = 1 to A.length
 return x
 
 Loop invariant : Is v excited or not.
-Initialization : After the loop initialization and before the loop test we don't know whether the value v is excited or not after each iteratoin
-                 we check whether it's excited or not.
+Initialization : After the loop initialization and before the loop test we don't know whether the value v is
+                 excited or not after each iteratoin we check whether it's excited or not.
 Maintanince    : Before each iteration we must sure we search the true value.
-Termination    : Finally we check whether it's exicted or not and our code is correct if it return the value if it's in the array or
-                 NIL if it's not otherwise it's incorrect.
+Termination    : Finally we check whether it's exicted or not and our code is correct if it return the value if it's
+                 in the array or NIL if it's not otherwise it's incorrect.
+```
+
+## 2.1-4)
+========
+```
 
 ```
