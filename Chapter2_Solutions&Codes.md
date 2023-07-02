@@ -42,7 +42,9 @@ Loop from j = 1 to A.length
         x = v
 return x
 
-Loop invariant : Is v excited or not.
+Loop invariant : Is v excited or not and On each iteration of the loop body, the invariant upon entering is that there
+                 is no index k < j so that A[k] = v.
+
 Initialization : After the loop initialization and before the loop test we don't know whether the value v is
                  excited or not after each iteratoin we check whether it's excited or not.
 Maintanince    : Before each iteration we must sure we search the true value.
