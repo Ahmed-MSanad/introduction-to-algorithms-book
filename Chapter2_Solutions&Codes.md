@@ -37,9 +37,12 @@ int main()
 ========
 ```
 x = NIL
-Loop from j = 1 to A.length
-    if A[j] == v
-        x = v
+For loop from j = 1 to A.length
+    if A[j] == v then
+        x = j
+        return j
+    end if
+end for
 return x
 
 Loop invariant : Is v excited or not and On each iteration of the loop body, the invariant upon entering is that there
@@ -47,7 +50,9 @@ Loop invariant : Is v excited or not and On each iteration of the loop body, the
 
 Initialization : After the loop initialization and before the loop test we don't know whether the value v is
                  excited or not after each iteratoin we check whether it's excited or not.
+
 Maintanince    : Before each iteration we must sure we search the true value.
+
 Termination    : Finally we check whether it's exicted or not and our code is correct if it return the value if it's
                  in the array or NIL if it's not otherwise it's incorrect.
 ```
@@ -55,5 +60,27 @@ Termination    : Finally we check whether it's exicted or not and our code is co
 ## 2.1-4)
 ========
 ```
+Input : 2 arrays(A, B) of size n each has the binary of a n-bit number.
+Output : array of n+1 elements has the sum of the given 2 numbers.
 
+carry =0
+for from i = 1 to A.length
+    if (A[i] + B[i] + carry) == 3
+        c[i] = 1
+        carry = 1
+    end if
+    else if (A[i] + B[i] + carry) == 2
+        c[i] = 0
+        carry = 1
+    end else if
+    else if (A[i] + B[i] + carry) == 1
+        c[i] = 1
+        carry = 0
+    end if
+    else
+        c[i] = 0
+        carry = 0
+    end else
+end for
+c[i] = carry
 ```
