@@ -47,6 +47,10 @@ while i <= n:
       (since we multiply factorial by i in each iteration). Therefore, we can use this loop invariant to prove that
       the loop correctly computes the factorial of n.
 
+When the loop is a for loop, the moment at which we check the loop invariant just prior to the first
+iteration is immediately after the initial assignment to the loop-counter variable and just before the
+first test in the loop header.
+
 We must show three things about a loop invariant:
 **Initialization**: It is true prior to the first iteration of the loop.
 **Maintenance**   : If it is true before an iteration of the loop, it remains true before the next iteration.
@@ -73,8 +77,6 @@ the sum of the first k natural numbers is k(k+1)/2. We want to prove that the st
 The sum of the first k+1 natural numbers is (k+1) + the sum of the first k natural numbers,
 which is (k+1) + k(k+1)/2 = (k+1)(k+2)/2 = (k+1)((k+1)+1)/2. Therefore, the statement is true for k+1.
 By the principle of mathematical induction, we can conclude that the statement is true for all natural numbers.
-
-
-
-
 ```
+
+
