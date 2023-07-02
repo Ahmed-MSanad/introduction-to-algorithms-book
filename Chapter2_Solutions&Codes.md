@@ -64,23 +64,33 @@ Input : 2 arrays(A, B) of size n each has the binary of a n-bit number.
 Output : array of n+1 elements has the sum of the given 2 numbers.
 
 carry =0
-for from i = 1 to A.length
+for from i = A.length to 1
     if (A[i] + B[i] + carry) == 3
-        c[i] = 1
+        c[i+1] = 1
         carry = 1
-    end if
     else if (A[i] + B[i] + carry) == 2
-        c[i] = 0
+        c[i+1] = 0
         carry = 1
-    end else if
     else if (A[i] + B[i] + carry) == 1
-        c[i] = 1
+        c[i+1] = 1
+        carry = 0
+    else
+        c[i+1] = 0
         carry = 0
     end if
-    else
-        c[i] = 0
-        carry = 0
-    end else
 end for
-c[i] = carry
+c[1] = carry
+
+OR
+
+carry = 0
+for i=n to 1 do
+    C[i + 1] = (A[i] + B[i] + carry) (mod 2)
+    if A[i] + B[i] + carry ≥ 2 then
+        carry = 1
+    else
+        carry = 0
+    end if
+end for
+C[1] = carry
 ```
