@@ -78,5 +78,73 @@ The sum of the first k+1 natural numbers is (k+1) + the sum of the first k natur
 which is (k+1) + k(k+1)/2 = (k+1)(k+2)/2 = (k+1)((k+1)+1)/2. Therefore, the statement is true for k+1.
 By the principle of mathematical induction, we can conclude that the statement is true for all natural numbers.
 ```
+## 2.2 Analyzing algorithms
+===========================
+```
+      Analyzing algorithms: predicting the resources that an algorithm whould need.
+                            most often needed resources are the computational time and memory.
 
+      What is The RAM model ??
+      ========================
+      The RAM model, which stands for Random Access Machine model,
+      is a theoretical model of a computer used in computer science and computational complexity theory.
+      The RAM model is a simple but powerful model that is used to investigate the computational complexity
+      of algorithms and problems.
 
+      In the RAM model, a computer is represented as a sequence of memory cells, each of which can store
+      an integer value. The model has a finite number of registers, which are used to store temporary values
+      during computation.
+      The RAM model also has a central processing unit (CPU) that can perform simple operations on memory
+      values, such as reading and writing values, arithmetic operations
+      (addition, subtraction, multiplication, and division), and conditional branching.
+
+      The RAM model is useful because it provides a simple and flexible abstraction of a computer
+      that can be used to reason about the time and space complexity of algorithms.
+      By counting the number of operations performed by an algorithm in the RAM model,
+      we can estimate its running time, and by counting the number of memory cells it uses,
+      we can estimate its space requirements.
+
+      is exponentiation a constanttime instruction? In the general case, no.
+      “shift left” instruction, which in constant time shifts the bits of an integer by k positions to the left
+```
+```
+Analysis of insertion sort
+==========================
+    - The time taken by an algorithm grows with the size of the input,
+      so it is traditional to describe the running time of a program as
+      a function of the size of its input.
+
+      Also, depending on how nearly sorted they already are.
+
+    - The running time of an algorithm on a particular input is the
+      number of primitive operations or “steps” executed.
+
+    - The running time of the algorithm is the sum of running times for each statement executed
+      a statement that takes ci steps to execute and executes n times will
+      contribute c<sub>i</sub>*n to the total running time.
+
+NOTE: A statement that references m words of memory and is executed n times
+      does not necessarily reference mn distinct words of memory
+
+      To compute T(n), the running time of INSERTION-SORT on an input of n values,
+      we sum the products of the cost and times.
+
+      Even for inputs of a given size, an algorithm’s running time may depend on
+      which input of that size is given. For example, in INSERTION-SORT, the best
+      case occurs if the array is already sorted.
+
+      If the array is in reverse order—then,it is the worst case.
+
+NOTE:
+      Σ<sub>2</sub> <sup>n</sup> j = (n*(n+1)/2) -1
+AND
+      Σ<sub>2</sub> <sup>n</sup> (j-1) = (n*(n-1)/2)
+
+      ========================
+      Summations(Appendix A):
+      ========================
+
+      
+
+      
+```
