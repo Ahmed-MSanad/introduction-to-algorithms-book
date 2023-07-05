@@ -143,8 +143,89 @@ AND
       ========================
       Summations(Appendix A):
       ========================
+      **Summation formulas and properties**:
+      --------------------------------------
+      a1 + a2 + a3 + a4 + ..... + an = Σ<sub>k = 1</sub> <sup>n</sup> a<sub>k</sub>
 
-      
+      a1 + a2 + a3 + a4 + ........   = Σ<sub>k = 1</sub> <sup>∞</sup> a<sub>k</sub> =
+      lim<sub> n -> ∞ </sub> Σ<sub>k = 1</sub> <sup>n</sup> a<sub>k</sub>
+      If the limit does not exist, the series diverges; otherwise, it converges.
 
-      
+The terms of a convergent series cannot always be added in any order. We can, however,
+rearrange the terms of an absolutely convergent series, that is, a series
+Σ<sub>k = 1</sub> <sup>∞</sup> a<sub>k</sub>for which the series
+Σ<sub>k = 1</sub> <sup>∞</sup> |a<sub>k</sub>| also converges.
+
+A series can either converge or diverge, depending on whether the sum of the terms
+in the sequence approaches a finite value or not.
+
+A series is said to converge if the sum of its terms approaches a finite limit as the number
+of terms in the series increases. In other words, if the value of the sum of the terms becomes
+arbitrarily close to a fixed value as more and more terms are added, the series is said to converge.
+
+The geometric series is an example of a convergent series. It has the general form: (a + ar + ar^2 + ar^3 + ...)
+where "a" is the first term, "r" is the common ratio between consecutive terms, and the series continues
+indefinitely. The geometric series converges if and only if the absolute value of the common ratio "r"
+is less than 1. In this case, the **sum of the series is given by: (S = a / (1 - r)).**
+For example, the series 1 + 1/2 + 1/4 + 1/8 + ... is a geometric series with "a" = 1 and "r" = 1/2.
+Since the absolute value of the common ratio is less than 1, the series converges, and its sum is:
+(S = a / (1 - r) = 1 / (1 - 1/2) = 2) So the sum of the series is 2.
+
+A series is said to diverge if the sum of its terms does not approach a finite limit as the number of
+terms in the series increases. In other words, if the sum of the terms grows without bound as more and
+more terms are added, the series is said to diverge.
+
+The harmonic series is an example of a divergent series. It has the general form: (1 + 1/2 + 1/3 + 1/4 + ...)
+where the series continues indefinitely. The harmonic series is a famous example of a divergent series,
+and it diverges to infinity. This means that as the number of terms in the series increases, the sum of
+the terms grows without bound, and there is no finite limit that the sum approaches.
+
+Whether a series converges or diverges depends on the behavior of its terms and the particular method
+used to add them up. There are many different tests and criteria that can be used to determine the
+convergence or divergence of a series, such as the ratio test, the comparison test, and the integral test, among others.
+
+      Linearity property:
+      -------------------
+      Σ<sub>k = 1</sub> (C*a<sub>k</sub> + b<sub>k</sub>) <sup>n</sup> =
+      (C * Σ<sub>k = 1</sub> a<sub>k</sub> <sup>n</sup>) + (Σ<sub>k = 1</sub> b<sub>k</sub> <sup>n</sup>)
+
+      The linearity property also applies to infinite convergent series.
+
+      Arithmetic series:
+      ------------------
+      Σ<sub>k = 1</sub> k <sup>n</sup> = 1 + 2 + ... + n (is an arithmetic series and has the value:)
+**(1) Σ<sub>k = 1</sub> <sup>n</sup> k = n*(n+1)/2  **
+**(2) Σ<sub>k = 1</sub> <sup>n</sup> k<sup>2</sup> = n*(n+1)*(2n+1)/6  **
+**(3) Σ<sub>k = 1</sub> <sup>n</sup> k<sup>3</sup> = n<sup>2</sup>*(n+1)<sup>2</sup>/4  **
+
+      Geometric series:
+      -----------------
+      - Geometric series For real x != 1, the summation: (x can be (-3) or 3 or 3.3 but not 1)
+      Σ<sub>k = 0</sub> <sup>n</sup> x<sup>k</sup> =  1 + x + .... + x(<sup>n</sup>)
+**(4) Σ<sub>k = 0</sub> <sup>n</sup> X<sup>k</sup> = (X(<sup>n+1</sup>) - 1) / (X - 1)**
+
+
+      - When the summation is infinite and |x| < 1, we have the infinite decreasing geometric series:
+**(5) Σ<sub>k = 0</sub> <sup>∞</sup> X<sub>k</sub> = 1/(1-X)**
+
+
+      Harmonic series:
+      -----------------
+      For positive integers n, the nth harmonic number is:
+      H<sub>n</sub> = 1 + (1/2) + (1/3) + .... + (1/n) = Σ<sub>k = 1</sub> <sup>n</sup> 1/k
+
+By integrating or differentiating the formulas above, additional formulas arise. For
+example, by differentiating both sides of the infinite geometric series (A.6) and
+multiplying by x, we get:
+**(6) Σ<sub>k = 0</sub> <sup>∞</sup> kX<sub>k</sub> = X/(1-X)<sup>2</sup>** , for |x| < 1.
+
+      Telescoping series:
+      -------------------
+      For any sequence a0,a1,....,an,
+**(7) Σ<sub>k = 1</sub> <sup>n</sup> (a<sub>k</sub> - a<sub>k-1</sub>) = an - a0**
+
+**(8) Σ<sub>k = 0</sub> <sup>n-1</sup> (a<sub>k</sub> - a<sub>k+1</sub>) = a0 - an**
+
+
+
 ```
