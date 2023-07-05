@@ -182,7 +182,8 @@ the terms grows without bound, and there is no finite limit that the sum approac
 
 Whether a series converges or diverges depends on the behavior of its terms and the particular method
 used to add them up. There are many different tests and criteria that can be used to determine the
-convergence or divergence of a series, such as the ratio test, the comparison test, and the integral test, among others.
+convergence or divergence of a series, such as the ratio test, the comparison test, and the integral
+test, among others.
 
       Linearity property:
       -------------------
