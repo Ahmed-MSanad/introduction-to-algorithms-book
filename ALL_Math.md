@@ -91,4 +91,7 @@ S = 8/(1-2/3) = 24.
 
 # Conversion Between  ∏ and Σ
 =============================<br>
-lg(∏<sub>k=1</sub><sup>n</sup>a<sub>k</sub>) = Σ<sub>k=1</sub><sup>n</sup>lg(a<sub>k</sub>)                          <br>
+lg(∏<sub>k=1</sub> <sup>n</sup> a<sub>k</sub>) = Σ<sub>k=1</sub><sup>n</sup>lg(a<sub>k</sub>)                          <br>
+
+lg => lg<sub>2</sub>                                                                                                   <br>
+
