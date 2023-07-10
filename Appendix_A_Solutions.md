@@ -49,6 +49,10 @@ k * Σ<sub>k = 0</sub><sup>∞</sup> (X<sup>k</sup>)                   = X/((1-X
 
 ## A.1-5
 ========<br>
+        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>k</sup> = ( 1/(1-X) ) - 1 = x/(1-X)
+        Multiply each side by X<sup>k</sup>,
+        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>2k</sup> = X/(1-X)
+
 
 ```
 How to solve any summation prove or show:
