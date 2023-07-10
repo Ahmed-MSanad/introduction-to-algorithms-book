@@ -49,10 +49,31 @@ k * Σ<sub>k = 0</sub><sup>∞</sup> (X<sup>k</sup>)                   = X/((1-X
 
 ## A.1-5
 ========<br>
-        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>k</sup> = ( 1/(1-X) ) - 1 = x/(1-X)
-        Multiply each side by X<sup>k</sup>,
-        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>2k</sup> = X/(1-X)
+        Σ<sub>k = 1</sub><sup>∞</sup>Y<sup>k</sup> = ( 1/(1-Y) ) - 1 = Y/(1-Y)
+        > put Y = X<sup>2</sup>
+        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>2k</sup> = X<sup>2</sup>/(1-X<sup>2</sup>)
+        > Multiply each side by X
+        Σ<sub>k = 1</sub><sup>∞</sup>X<sup>(2k+1)</sup> = (X<sup>3</sup>)/((1-X<sup>2</sup>))
+        > differentiate both sides
+        (2k+1) * Σ<sub>k = 1</sub><sup>∞</sup>X<sup>2k</sup> = 
+        ((3X</sup>2<sup> * (1-X</sup>2<sup>)) - (X</sup>3<sup> * -2X) / (1-X<sup>2</sup>))<sup>2</sup>) = 
+        ((3X</sup>2<sup> - 3X</sup>4<sup>) + 2X<sup>4</sup>) / (1-X<sup>2</sup>))<sup>2</sup>)  = 
+        ((3X</sup>2<sup> - X</sup>4<sup>) / (1-X<sup>2</sup>))<sup>2</sup>)
+        
 
+## A.1-7
+========<br>
+∏<sub>k=1</sub><sup>n</sup>2*4<sup>k</sup> =>
+we have: lg(∏<sub>k=1</sub><sup>n</sup>a<sub>k</sub>) = Σ<sub>k=1</sub><sup>n</sup>lg(a<sub>k</sub>)                          <br>
+So: lg(∏<sub>k=1</sub><sup>n</sup>(2*4<sup>k</sup>)) = Σ<sub>k=1</sub><sup>n</sup>lg(2*4<sup>k</sup>) =                       <br>
+Σ<sub>k=1</sub><sup>n</sup> lg(2) + Σ<sub>k=1</sub><sup>n</sup> lg(4<sup>k</sup>) =                                           <br>
+lg(2) * Σ<sub>k=1</sub><sup>n</sup>  + lg(4)* Σ<sub>k=1</sub><sup>n</sup> k =                                                 <br>
+(lg(2) * n) + (lg(4) * n*(n+1)/2) =                                                                                           <br>     
+n + 2*(n*(n+1)/2)) =( n + n*(n+1) )= n(1 + n + 1) = n * (n + 2)                                                               <br>
+
+SO: lg(∏<sub>k=1</sub><sup>n</sup>(2*4<sup>k</sup>)) = n*(n+2)                                                                <br>
+Then: ∏<sub>k=1</sub><sup>n</sup>(2*4<sup>k</sup>) =                                                                          <br>
+2<sup>(n*(n+2))</sup> = 2<sup>(n<sup>2</sup>+2n))</sup> = 2<sup>(n<sup>2</sup>))</sup> * 4<sup>n</sup>                        <br>
 
 ```
 How to solve any summation prove or show:
