@@ -1,8 +1,8 @@
 # Sequences:
-=============
+=============<br>
 
 - Find the pattern:
-  ==================
+  ==================<br>
   eg 1:  {2, 3/sqrt(2), 4/sqrt(3), 5/2, ......}    <br>
   sol:   {2/sqrt(1), 3/sqrt(2), 4/sqrt(3), 5/sqrt(4), .....} ,<br>
           a<sub>1</sub> = 2/sqrt(1)<br>
@@ -12,7 +12,7 @@
           so , a<sub>n</sub> = (n+1)/sqrt(n)<br>
   
 # Summations:
-=============
+=============<br>
 
 (1) ***Σ<sub>k = 1</sub><sup>n</sup> c = cn***<br>
     eg: Σ<sub>k = 1</sub><sup>8</sup> 7 = 7*8 = 56<br>
@@ -82,13 +82,13 @@ as |2/3| < 1  ==>> -1 < 2/3 < 1
 S = 8/(1-2/3) = 24.
 
 # Harmonic series
-==================
+==================<br>
 
 
 # Telescoping series
-=====================
+=====================<br>
 
 
 # Conversion Between  ∏ and Σ
-=============================
+=============================<br>
 lg(∏<sub>k=1</sub><sup>n</sup>a<sub>k</sub>) = Σ<sub>k=1</sub><sup>n</sup>lg(a<sub>k</sub>)                          <br>
