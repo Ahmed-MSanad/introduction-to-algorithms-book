@@ -63,7 +63,7 @@ k * Σ<sub>k = 0</sub><sup>∞</sup> (X<sup>k</sup>)                   = X/((1-X
 
 ## A.1-7
 ========<br>
-∏<sub>k=1</sub><sup>n</sup>2*4<sup>k</sup> =>
+∏<sub>k=1</sub><sup>n</sup>(2*4<sup>k</sup>) =>
 we have: lg(∏<sub>k=1</sub><sup>n</sup>a<sub>k</sub>) = Σ<sub>k=1</sub><sup>n</sup>lg(a<sub>k</sub>)                          <br>
 So: lg(∏<sub>k=1</sub><sup>n</sup>(2*4<sup>k</sup>)) = Σ<sub>k=1</sub><sup>n</sup>lg(2*4<sup>k</sup>) =                       <br>
 Σ<sub>k=1</sub><sup>n</sup> lg(2) + Σ<sub>k=1</sub><sup>n</sup> lg(4<sup>k</sup>) =                                           <br>
