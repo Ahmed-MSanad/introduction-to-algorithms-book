@@ -63,17 +63,17 @@ S = ( a<sub>1</sub> )/(1 - r) , |r| < 1 ===>> (-1 < r < 1)
 Examples:
 ---------
 1-
-     Σ<sub>k = 1</sub> <sup>6</sup> 2<sub>k</sub> = ((2^(6+1) - 1) / (2-1)) - 1 = 126.
+     Σ<sub>k = 1</sub> <sup>6</sup> 2<sup>k</sup> = ((2^(6+1) - 1) / (2-1)) - 1 = 126.
 
 2-
-    Σ<sub>k = 1</sub> <sup>4</sup> 3/2<sub>(k-1)</sub> =
-    Σ<sub>k = 1</sub> <sup>4</sup> (3/2)<sub>k</sub> / (3/2) =  (Σ<sub>k = 0</sub> <sup>4</sup> - Σ<sub>k = 0</sub> <sup>0</sup>)
+    Σ<sub>k = 1</sub> <sup>4</sup> 3/2<sup>(k-1)</sup> =
+    Σ<sub>k = 1</sub> <sup>4</sup> (3/2)<sup>k</sup> / (3/2) =  (Σ<sub>k = 0</sub> <sup>4</sup> - Σ<sub>k = 0</sub> <sup>0</sup>)
     (2/3) * ( ( (3/2)^(4+1) - 1) / ((3/2) - 1)  - (3/2)^0 )  = 8.125.
 
 3-
-    Σ<sub>k = 1</sub> <sup>∞</sup> 8 * (2/3)<sub>(k-1)</sub> =
-    8*(3/2) * Σ<sub>k = 1</sub> <sup>∞</sup> (2/3)<sub>k</sub> =
-    12 * (Σ<sub>k = 0</sub> <sup>∞</sup> (2/3)<sub>k</sub> - Σ<sub>k = 0</sub> <sup>0</sup> (2/3)<sub>k</sub>) =
+    Σ<sub>k = 1</sub> <sup>∞</sup> 8 * (2/3)<sup>(k-1)</sup> =
+    8*(3/2) * Σ<sub>k = 1</sub> <sup>∞</sup> (2/3)<sup>k</sup> =
+    12 * (Σ<sub>k = 0</sub> <sup>∞</sup> (2/3)<sup>k</sup> - Σ<sub>k = 0</sub> <sup>0</sup> (2/3)<sup>k</sup>) =
     12 * ( 1 / (1 - ( 2/3 ) ) - (2/3)^0) = 24.
     
 OR
