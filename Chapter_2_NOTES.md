@@ -230,3 +230,23 @@ multiplying by x, we get:
 
 
 ```
+
+## 2.3 Designing algorithms
+
+(1) There is wide range of algorithm design techniques for 1 issue:<br><br>
+      For eg: Sorting problem:<br><br>
+      - Inseration sort (incremental approach)<br><br>
+      - Merge sort (divide-and-conquer approach)<br><br>
+     Divide-and-conquer approach to design a sorting algorithm whose worst-case running time is much<br><br>
+      less than that of insertion sort. <br><br>
+      One advantage of divide-and-conquer algorithms is<br><br>
+      that their running times are often easily determined using techniques that we will<br><br>
+      see in Chapter 4.<br><br>
+
+(2) 
+
+
+
+
+
+
