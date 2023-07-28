@@ -243,10 +243,17 @@ multiplying by x, we get:
       that their running times are often easily determined using techniques that we will<br><br>
       see in Chapter 4.<br><br>
 
-(2) 
+(2) Divide-and-conquer approach:
+    ============================
+      Break the problem into several subproblems that are similar to the original problem but smaller in size,
+      solve the subproblems recursively, and then combine these solutions to create a solution to the original problem.
 
+      **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
+      
+      **Conquer** the subproblems by solving them recursively. If the subproblem sizes are
+      small enough, however, just solve the subproblems in a straightforward manner.
+      
+      **Combine** the solutions to the subproblems into the solution for the original problem.
 
-
-
-
+      
 
