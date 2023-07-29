@@ -255,5 +255,21 @@ multiplying by x, we get:
       
       **Combine** the solutions to the subproblems into the solution for the original problem.
 
+      loop invariant:
+            At the start of each iteration of the for loop of lines 12–17, the subarray
+            A[p...k-1] contains the k - p smallest elements of L[1...n1+1] and R[1...n2+1], in sorted order. 
+            Moreover, L[i] and R[j] are the smallest elements of their arrays that have not been copied back into A.
+      
+      We must show that this **loop invariant** holds prior to the first iteration of the for
+      loop of lines 12–17, that **each iteration of the loop maintains the invariant**, and
+      that the invariant provides a useful property to show correctness when the loop terminates.
+
+      The algorithm consists of merging pairs of 1-item sequences to form sorted sequences
+      of length 2, merging pairs of sequences of length 2 to form sorted sequences of
+      length 4, and so on, until two sequences of length n=2 are merged to form the final
+      sorted sequence of length n.
+
+
       
 
+      
