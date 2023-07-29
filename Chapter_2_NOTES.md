@@ -247,24 +247,24 @@ multiplying by x, we get:
     ============================<br>
       Break the problem into several subproblems that are similar to the original problem but smaller in size,<br>
       solve the subproblems recursively, and then combine these solutions to create a solution to the original problem.<br>
-
-      **Divide** the problem into a number of subproblems that are smaller instances of the same problem.<br>
       
-      **Conquer** the subproblems by solving them recursively. If the subproblem sizes are<br>
-      small enough, however, just solve the subproblems in a straightforward manner.<br>
+**Divide** the problem into a number of subproblems that are smaller instances of the same problem.<br>
       
-      **Combine** the solutions to the subproblems into the solution for the original problem.<br>
+**Conquer** the subproblems by solving them recursively. If the subproblem sizes are<br>
+small enough, however, just solve the subproblems in a straightforward manner.<br>
+      
+**Combine** the solutions to the subproblems into the solution for the original problem.<br>
 
-      loop invariant:<br>
+loop invariant:<br>
             At the start of each iteration of the for loop of lines 12–17, the subarray<br>
             A[p...k-1] contains the k - p smallest elements of L[1...n1+1] and R[1...n2+1], in sorted order. <br>
             Moreover, L[i] and R[j] are the smallest elements of their arrays that have not been copied back into A.<br>
       
-      We must show that this **loop invariant** holds prior to the first iteration of the for<br>
+We must show that this **loop invariant** holds prior to the first iteration of the for<br>
       loop of lines 12–17, that **each iteration of the loop maintains the invariant**, and<br>
       that the invariant provides a useful property to show correctness when the loop terminates.<br>
 
-      The algorithm consists of merging pairs of 1-item sequences to form sorted sequences<br>
+The algorithm consists of merging pairs of 1-item sequences to form sorted sequences<br>
       of length 2, merging pairs of sequences of length 2 to form sorted sequences of<br>
       length 4, and so on, until two sequences of length n=2 are merged to form the final<br>
       sorted sequence of length n.<br>
