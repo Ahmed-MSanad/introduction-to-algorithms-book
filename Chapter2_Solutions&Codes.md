@@ -94,3 +94,82 @@ for i=n to 1 do
 end for
 C[1] = carry
 ```
+2.3-1:
+======
+From top to Bottom: <br>
+3, 41, 52, 26, 38, 57, 9, 49<br>
+
+3, 41, 52, 26 <=> 38, 57, 9, 49 <br>
+
+3, 41 <=> 52, 26 <=> 38, 57 <=> 9, 49 <br>
+
+3 <=> 41 <=> 52 <=> 26 <=> 38 <=> 57 <=> 9 <=> 49 <br>
+
+
+From Bottom to top:
+3, 9, 26, 38, 41, 49, 52, 57<br>
+
+3, 26, 41, 52 <=> 9, 38, 49, 57 <br>
+
+3, 41 <=> 26, 52 <=> 38, 57 <=> 9, 49 <br>
+
+3 <=> 41 <=> 52 <=> 26 <=> 38 <=> 57 <=> 9 <=> 49 <br>
+
+2.3-2:
+======
+
+
+```
+void MergeCombine(int a[],int l,int m,int r){
+    int i,j,k;
+    int n1 = m - l + 1; // first subarray is arr[L..m] , sz_left_subarr
+    int n2 = r - m; // second subarray is arr[m+1..r] , sz_right_subarr
+    int *L =new int[n1], *R =new int[n2]; // dynamic array to let us set it's size as variable
+
+    for(i = 0 ; i < n1 ; i++){
+        L[i] = a[l + i];
+    }
+    for(j = 0 ; j < n2 ; j++){
+        R[j] =a[m + 1 + j];
+    }
+
+    i = j = 0;
+    k = l;
+
+    while(i < n1 && j < n2){
+        if(L[i] <= R[j]){               // If wanna sorting descending make it >
+            a[k++] =L[i++];
+        }
+        else{
+            a[k++] =R[j++];
+        }
+    }
+    while(i < n1){
+        a[k++] = L[i++];
+    }
+    while(j < n2){
+        a[k++] = R[j++];
+    }
+}
+```
+
+2.3-5:
+======
+```
+int BinarySearch_iterativly(int value,
+                            int myArray[],
+                            int sz)
+{
+    int l =0,r =sz-1,md;
+    while(l <= r){
+        md = l + (r-l)/2;
+        if(myArray[md] == value){return md;}
+        else if(myArray[md] > value){r =md-1;}
+        else{l =md+1;}
+    }
+    return -1;
+}
+```
+
+
+
